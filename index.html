@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro To-Do List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&display=swap');
+        </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Section -->
+      <header class="header">
+        <h1>To-Do List</h1>
+      </header>
+
+      <!-- Input Section -->
+      <section class="task-input">
+        <input type="text" id="new-task" placeholder="Enter a new task..." />
+        <select id="priority-level">
+          <option value="low">Low Priority</option>
+          <option value="medium">Medium Priority</option>
+          <option value="high">High Priority</option>
+        </select>
+        <button id="add-task">Add Task</button>
+      </section>
+
+      <!-- Task List Section -->
+      <section class="task-list">
+        <h2>Your Tasks</h2>
+        <ul id="tasks">
+          <!-- Task items will be dynamically added here -->
+        </ul>
+      </section>
+
+      <!-- Filter Section -->
+      <section class="task-filters">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+        <button class="filter-btn" data-filter="pending">Pending</button>
+      </section>
+    </div>
+  </body>
+</html>
